@@ -1,0 +1,116 @@
+
+				#navbar {
+					overflow: hidden;
+					background-color: #333;
+					position: fixed;
+					top: 0;
+					width: 100%;
+					z-index: 1;
+
+				}
+
+				#navbar a {
+					float: left;
+					display: block;
+					color: white;
+					text-align: center;
+					padding:20px 26px;
+					text-decoration: none;
+					font-size: 14px;
+					font-family: Arial;
+				}
+
+				#navbar a:hover {
+					background-color: white;
+					color: #333;
+				}
+
+				#navbar a.active {
+					background-color: #148F77;
+				}
+
+				* {
+					box-sizing: border-box;
+				}
+
+				body {
+					margin: 0;
+					font-family: Arial;
+				}
+
+				.header {
+					text-align: center;
+					padding: 32px;
+
+				}
+
+				.column {
+					float: left;
+					width: 50%;
+					padding: 10px;
+				}
+
+				.column img {
+					margin-top: 12px;
+				}
+
+				.row:after {
+					content: "";
+					display: table;
+					clear: both;
+
+				}
+
+				.header {
+					text-align: center;
+					padding: 32px;
+					font-size: 24px;
+
+				}
+
+				.subtext {
+					text-align: center;
+					padding: 5px;
+				}
+
+				.image {
+					opacity: 1;
+					display: block;
+					width: 100%;
+					height: auto;
+					transition: .5s ease;
+					backface-visibility: hidden;
+					z-index: -1;
+				}
+
+				.container {
+					position: relative;
+					width: 75%;
+
+				}
+
+				.middle {
+					transition: .5s ease;
+					opacity: 0;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					text-align: center;
+				}
+
+				.container:hover .image {
+					opacity: 0.3;
+				}
+
+				.container:hover .middle {
+					opacity: 1;
+				}
+
+				.text {
+					background-color: #148F77;
+					color: white;
+					font-size: 16px;
+					padding: 16px 32px;
+				}
